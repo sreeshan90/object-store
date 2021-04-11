@@ -21,9 +21,10 @@ the store in an async fashion.
 
 ### Execution steps:
 
-1. git clone this repo
-2. docker build -t theom/object-store .
-3. docker run -p 8080:8080 theom/object-store
+1. git clone https://github.com/sreeshan90/object-store.git
+2. cd object-store
+3. docker build -t theom/object-store .
+4. docker run -p 8080:8080 theom/object-store
 
 
 Postman Collection available inside the repo - under /src/main/resources
