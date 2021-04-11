@@ -5,7 +5,7 @@
 * No persistent storage. Only storage until JVM restarts
 * Object here is a User with three fields - uuid, name, email
 
-###Implementation Specifics
+### Implementation Specifics
 
 This data store uses in-memory concurrent B-Linked-Tree to store the user data. This data structure was chose
 because the insert, delete and search operations support logarithmic complexities and suitable for the concurrency needs
@@ -19,7 +19,7 @@ To handle the large bursts of write, a queuing mechanism is in place. The insert
 incoming request on to a queue. From the queue, a consumer service processes the users and inserts them into
 the store in an async fashion.
 
-###Execution steps:
+### Execution steps:
 
 1. git clone this repo
 2. docker build -t theom/object-store .
