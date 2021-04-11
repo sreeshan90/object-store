@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "2ef66ebc-ca38-4f95-911c-7ddd65d1003c",
+		"name": "DataStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuid\": \"124e28e3-8d73-4ed1-859c-e65e35b4fe66\",\n    \"name\": \"Test User\",\n    \"email\": \"test@user.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/abc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/124e28e3-8d73-4ed1-859c-e65e35b4fe66",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"124e28e3-8d73-4ed1-859c-e65e35b4fe66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/abc",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/124e28e3-8d73-4ed1-859c-e65e35b4fe66",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"124e28e3-8d73-4ed1-859c-e65e35b4fe66"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
